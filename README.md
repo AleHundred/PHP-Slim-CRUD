@@ -7,6 +7,8 @@ Mini PHP app to list customers built with PHP Slim 3, Slim/PDO, MySQL and Bootst
  - View/Add/Edit/Delete Customers
  - Search Customers
 
+ ![Screenshot](http://192.185.136.35/~slimcrud/img/screenshot.jpg)
+
 ## Database structure
 
  Single table MySQL database with customer information.
