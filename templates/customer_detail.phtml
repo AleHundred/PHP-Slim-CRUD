@@ -1,0 +1,54 @@
+<?php include ('header.php'); ?>
+        <h1>Update Customer</h1>
+    </div>
+    <div class="col-md-12 center-block">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Customer Detail</h3>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-4">
+                    <p><strong>First Name:</strong> <?=$customer->getFirstName()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Last Name:</strong> <?=$customer->getLastName()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Company:</strong> <?=$customer->getCompany()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Job Title:</strong> <?=$customer->getJobTitle()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Email:</strong> <?=$customer->getEmail()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Phone:</strong> <?=$customer->getPhone()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <p><strong>Website:</strong> <?=$customer->getWebsite()?></p>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="<?=$router->pathFor('customer-edit', ['id' => $customer->getId()])?>">
+                        <button type="button" class="btn btn-sm btn-info">edit</button>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="<?=$router->pathFor('customer-delete', ['id' => $customer->getId()])?>" >
+                        <button type="button" class="btn btn-sm btn-danger">delete</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<?php include ('footer.php'); ?>

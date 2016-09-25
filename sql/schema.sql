@@ -1,0 +1,35 @@
+CREATE TABLE customers (
+  id int NOT NULL AUTO_INCREMENT,
+  join_date timestamp,
+  first_name varchar(255) NOT NULL,
+  last_name varchar(255) NOT NULL,
+  company varchar(128) NOT NULL,
+  job_title varchar(100) NOT NULL,
+  email varchar(55) NOT NULL,
+  phone varchar(20) NOT NULL,
+  website varchar(512) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB;
+
+INSERT INTO `customers` (`id`, `first_name`, `last_name`, `company`, `job_title`, `email`, `phone`, `website`) VALUES
+(1, 'Harry', 'Potter', 'Potter & Yard', 'Central Quality Orchestrator', 'Equed1984@gustr.com', '202-555-0104', 'coolideasious.com'),
+(2, 'Homer', 'Simpson', 'Vellum & Bank', 'Legacy Configuration Facilitator', 'Sten1973@jourrapide.com', '+1-202-555-0197', 'coolideasize.com'),
+(4, 'Jeff', 'Lebowsky', 'Cocoa & Braid', 'Central Applications Strategist', 'ef23@dayrep.com', '202-555-0106', 'dayrep.com'),
+(5, 'Jerry', 'Maguire', 'Beggar & Boot', 'International Division Developer', 'mail2@domain.com', '202-555-0122', 'none'),
+(6, 'Don', 'Draper', 'Bantam & Plane', 'Product Response Associate', 'Thorrover1941@fleckens.hu', '202-555-0123', 'flckens.hu'),
+(7, 'Walter', 'White', 'Cable & Stone', 'Dynamic Interactions Executive', 'mail@domain.com', '202-555-01214', 'domain.com'),
+(8, 'Vincent', 'Van Gogh', 'Cactus & Desk', 'Legacy Metrics Assistant', 'Cogn1975@teleworm.us', '202-555-0168', 'teleworm.us'),
+(9, 'Luna', 'Potter', 'Sweater & Code', 'International Accountability Strategist', 'Thisere1988@gustr.com', '202-555-0169', 'gustr.com'),
+(10, 'Leonardo', 'Da Vinci', 'Coach & Letter', 'Senior Intranet Agent', 'Thorrover1941@fleckens.hu', '202-555-0170', 'flckens.hu'),
+(11, 'William', 'Potter', 'Potter & Beam', 'Regional Assurance Manager', 'Trainsomill73@fleckens.hu', '+1-202-555-0105', 'flckens.hu'),
+(12, 'Walter', 'Mitty', 'Viper & Son', 'National Integration Technician', 'Deach1990@dayrep.com', '+1-202-555-0104', 'teleworm.us'),
+(13, 'Leonardo', 'Di Caprio', 'Bucket & Town', 'Investor Mobility Manager', 'Libus1975@armyspy.com', '+1-202-555-0106', 'domain.com'),
+(14, 'Alexander', 'Bulnes', 'Circle & Fog', 'Dynamic Directives Designer', 'Thisposs59@teleworm.us', '+1-202-555-0107', 'teleworm.us'),
+(15, 'Priscilla', 'Bulnes', 'Cipher & Cord', 'Chief Paradigm Orchestrator', 'Whoures1967@fleckens.hu', '+1-202-555-0144', 'fleckens.hu'),
+(16, 'Jack', 'Kerouac', 'Cipher & Cord', 'Writer', 'Therwaseld30@einrot.com', '+1-202-555-0145', 'teleworm.us'),
+(17, 'Jack', 'Bauer', 'Bucket & Town', 'International Accountability Strategist', 'Quine1973@superrito.com', '+1-202-555-0146', 'superrito.com'),
+(18, 'Kurt', 'Vonnegut', 'Cipher & Cord', 'Writer', 'ef23@dayrep.com', '+1-202-555-0147', 'dayrep.com'),
+(19, 'Kurt', 'Cobain', 'Tulip & Flesh', 'International Accountability Strategist', 'Doperelpland1988@einrot.com', '+1-202-555-0196', 'domain.com'),
+(20, 'Homer H', 'Simpson', 'Vellum & Bank', 'Legacy Configuration Facilitator', 'alexbulnes@mail.com', '+1-202-555-0197', ''),
+(21, 'H.P.', 'Potter', 'Potter & Yard', 'Central Quality Orchestrator', 'Equed1984@gustr.com', '202-555-0104', ''),
+(22, 'William', 'Burroughs', 'My Company', 'Writer', 'mail@correo2.com', '+1-202-555-0199', 'http://website.com');

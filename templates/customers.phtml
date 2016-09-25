@@ -1,0 +1,49 @@
+<?php include ('header.php'); ?>
+        <h1>All Customers</h1>
+    </div>
+
+    <?php
+        if($data['customers'] && is_array($data['customers'])):
+    ?>
+    <div class="panel panel-default">
+        <div class="panel-heading">Viewing all customers</div>
+        <table class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Company</th>
+                    <th>Job Title</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            <?php foreach($data['customers'] as $customer): ?>
+                <tr>
+                    <td><?=$customer->getFirstName() ?></td>
+                    <td><?=$customer->getLastName() ?></td>
+                    <td><?=$customer->getCompany() ?></td>
+                    <td><?=$customer->getJobTitle() ?></td>
+                    <td><?=$customer->getEmail() ?></td>
+                    <td>
+                        <a href="<?=$router->pathFor('customer-detail', ['id' => $customer->getId()])?>">
+                            <button type="button" class="btn btn-xs btn-success">view</button>
+                        </a>
+                        <a href="<?=$router->pathFor('customer-edit', ['id' => $customer->getId()])?>">
+                            <button type="button" class="btn btn-xs btn-info">edit</button>
+                        </a>
+                        <a href="<?=$router->pathFor('customer-delete', ['id' => $customer->getId()])?>" >
+                            <button type="button" class="btn btn-xs btn-danger">delete</button>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <?php else: ?>
+        <div class="alert alert-danger" role="alert">No current customers</div>
+    <?php endif; ?>
+<?php include ('footer.php'); ?>
